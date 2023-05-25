@@ -1,16 +1,20 @@
 <script>
 //libraries
 import axios from 'axios';
-//function
-import { store } from './store';
 //components
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
   name: 'App',
   components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
   },
   data() {
     return {
-      store
+
     }
   },
   created() {
@@ -19,7 +23,11 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+</template>
 
 <style lang="scss" scoped>
 @use './assets/scss/main.scss' as *;
