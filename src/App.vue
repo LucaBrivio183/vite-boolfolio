@@ -14,11 +14,25 @@ export default {
   },
   data() {
     return {
-
+      apiBaseUrl: 'http://127.0.0.1:8000/api',
+      apiURLs: {
+        projects: '/projects',
+      },
+      projects: [],
+    }
+  },
+  methods: {
+    getProjects() {
+      axios.get(this.apiBaseUrl + this.apiURLs.projects).
+        then((response) => {
+          console.log(response);
+        }).catch((error) => {
+          console.log(error);
+        });
     }
   },
   created() {
-
+    this.getProjects();
   }
 }
 </script>
