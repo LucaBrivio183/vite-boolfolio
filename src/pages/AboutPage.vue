@@ -6,9 +6,11 @@ export default {
 
 
 <template>
-    <section>
-        <h1 class="mt-5 mb-3">About Me</h1>
-    </section>
+    <main>
+        <div class="container">
+            <h1 class="mt-5 mb-3">About Me</h1>
+        </div>
+    </main>
 </template>
 
 
