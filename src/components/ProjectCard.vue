@@ -1,7 +1,7 @@
 <script>
 //components
 export default {
-    name: 'AppMain',
+    name: 'ProjectCard',
     props: {
         projects: Object,
     },
